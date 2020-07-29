@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline4"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.38"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.25"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline2"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline3"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.56"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner"
+            app:riv_corner_radius="10dp"
+
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                  android:id="@+id/l1"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintEnd_toStartOf="@+id/l2"
+                  android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/imageView"
+                  app:layout_constraintHorizontal_chainStyle="spread_inside">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/bjx"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iV1"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv1" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l2"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l1" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l3" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/guideline4">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/bm"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv2"/>
+        <TextView
+                android:text="@string/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv2" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l3"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l2" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l4"
+                  android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline4">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/cs"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv3"/>
+        <TextView
+                android:text="@string/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv3" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l4"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l3" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l5"
+                  android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline4">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/hm"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv4"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv4" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l5"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l4"
+                  app:layout_constraintEnd_toEndOf="@+id/imageView"
+                  android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline4">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/jm"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv5"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv5" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l6"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toStartOf="@+id/imageView"
+                  app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/l7"
+                  android:layout_marginStart="8dp" app:layout_constraintHorizontal_chainStyle="spread_inside"
+                  android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline2">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/hmao"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iV6"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv6" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l7"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l6" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l8" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/guideline2">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/sl"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv7"/>
+        <TextView
+                android:text="@string/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv7" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l8"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l7" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l9" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/guideline2">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/sk"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv8"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv8" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l9"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l8" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toStartOf="@+id/l10" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/guideline2">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/q"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv9"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv9" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="79dp"
+                  android:orientation="vertical"
+                  android:id="@+id/l10"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toEndOf="@+id/l9" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toEndOf="@+id/imageView" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/guideline2">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/m"
+                tools:layout_editor_absoluteY="-64dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/iv10"/>
+        <TextView
+                android:text="@string/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="249dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:id="@+id/tv10" android:layout_marginTop="11dp"/>
+
+    </LinearLayout>
+    <ImageView
+            android:layout_width="23dp"
+            android:layout_height="29dp" app:srcCompat="@drawable/fire"
+            android:id="@+id/imageView3" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" app:layout_constraintStart_toStartOf="@+id/l6"/>
+    <TextView
+            android:text="@string/guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" android:textColor="#2D2F32"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" app:layout_constraintStart_toEndOf="@+id/imageView3"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline3"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline5"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.78"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+
+            android:id="@+id/c1" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_chainStyle="spread_inside" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5" app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="1.0">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="193dp"
+                android:layout_height="96dp"
+
+                android:src="@drawable/pic1"
+                android:id="@+id/iv14"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                app:riv_corner_radius="10dp"
+        />
+        <TextView
+                android:text="荒野大爷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv14"
+                android:textSize="13sp"
+                android:textColor="#fff"
+
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/iv14"/>
+        <TextView
+                android:text="5.5万"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv114"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/iv14"/>
+        <TextView
+                android:text="你在教我做事？"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/tv15" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/iv14"/>
+        <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp" app:srcCompat="@drawable/v"
+                android:id="@+id/iv15" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv15"
+        />
+        <TextView
+                android:text="绝活卡尔使用者"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv16"
+                android:textColor="#DF6432"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/iv15"
+                android:layout_marginStart="3dp" app:layout_constraintTop_toBottomOf="@+id/tv15"
+                android:layout_marginTop="5dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+
+            android:id="@+id/c2" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_chainStyle="spread_inside" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5" app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginStart="200dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="193dp"
+                android:layout_height="96dp"
+
+                android:src="@drawable/pic1"
+                android:id="@+id/iv16"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                app:riv_corner_radius="10dp"
+        />
+        <TextView
+                android:text="荒野大爷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv17"
+                android:textSize="13sp"
+                android:textColor="#fff"
+
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/iv16"/>
+        <TextView
+                android:text="5.5万"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv18"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/iv16"/>
+        <TextView
+                android:text="你在教我做事？"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/tv19" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/iv16"/>
+        <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp" app:srcCompat="@drawable/v"
+                android:id="@+id/iv19" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv19"
+        />
+        <TextView
+                android:text="绝活卡尔使用者"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv20"
+                android:textColor="#DF6432"
+                app:layout_constraintStart_toEndOf="@+id/iv19"
+                android:layout_marginStart="3dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/tv19"
+                android:layout_marginTop="5dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="145dp"
+
+            android:id="@+id/c3"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/c1" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="193dp"
+                android:layout_height="96dp"
+
+                android:src="@drawable/pic1"
+                android:id="@+id/iv21"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                app:riv_corner_radius="10dp"
+        />
+        <TextView
+                android:text="荒野大爷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv21"
+                android:textSize="13sp"
+                android:textColor="#fff"
+
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv21"/>
+        <TextView
+                android:text="5.5万"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv22"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/iv21"/>
+        <TextView
+                android:text="你在教我做事？"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/tv23" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/iv21"/>
+        <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp" app:srcCompat="@drawable/v"
+                android:id="@+id/iv22" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv23"
+        />
+        <TextView
+                android:text="绝活卡尔使用者"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv24"
+                android:textColor="#DF6432"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv23"
+                android:layout_marginTop="5dp" app:layout_constraintStart_toEndOf="@+id/iv22"
+                android:layout_marginStart="3dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="153dp"
+
+            android:id="@+id/c4"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/c2" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="193dp"
+                android:layout_height="96dp"
+
+                android:src="@drawable/pic1"
+                android:id="@+id/imageView4"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                app:riv_corner_radius="10dp"
+                android:layout_marginStart="8dp" android:layout_marginTop="3dp"/>
+        <TextView
+                android:text="荒野大爷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="13sp"
+                android:textColor="#fff"
+
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/imageView4"/>
+        <TextView
+                android:text="5.5万"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/imageView4"/>
+        <TextView
+                android:text="你在教我做事？"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/textView5" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+        <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp" app:srcCompat="@drawable/v"
+                android:id="@+id/imageView5" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+        />
+        <TextView
+                android:text="绝活卡尔使用者"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv12"
+                android:textColor="#DF6432"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView5"
+                android:layout_marginStart="3dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+                android:layout_marginTop="5dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
